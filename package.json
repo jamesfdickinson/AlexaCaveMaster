@@ -12,6 +12,7 @@
 "npm": "3.8.3"
 },
   "dependencies": {
-    "alexa-app-server": "^2.2.4"
+    "alexa-app-server": "^2.2.4",
+    "alexa-app": "*"
   }
 }
