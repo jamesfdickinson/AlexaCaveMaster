@@ -7,6 +7,10 @@
     "name": "Jimmy",
     "email": ""
   },
+  "engines": {
+"node": "4.2.5",
+"npm": "3.8.2"
+},
   "dependencies": {
     "alexa-app-server": "^2.2.4"
   }
