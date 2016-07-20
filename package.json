@@ -8,7 +8,7 @@
     "email": ""
   },
   "engines": {
-"node": "4.2.5",
+"node": "4.2.4",
 "npm": "3.8.2"
 },
   "dependencies": {
