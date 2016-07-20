@@ -14,13 +14,13 @@ app.launch(function (req, res) {
 
     var caveMaster = new CaveMaster();
     var currentRoom = caveMaster.currentRoom;
-    var sndPath = encodeURI('https://8fa556c8.ngrok.io/' + caveMaster.currentRoom.soundPath);
+    var sndPath = encodeURI('https://jimmyalexaskills.azurewebsites.net/' + caveMaster.currentRoom.soundPath);
 
     res.shouldEndSession(false);
     res.session("currentRoom", currentRoom.name);
     res.say("<audio src='" + sndPath + "' />");
 
-    //  res.say("<audio src='https://8fa556c8.ngrok.io/output.mp3' />");
+    //  res.say("<audio src='https://jimmyalexaskills.azurewebsites.net/output.mp3' />");
 
 });
 var getAllActions = function () {
@@ -48,13 +48,13 @@ app.intent('ActionIntent', {
     var newRoom = caveMaster.processSpeech(req.slot('ACTION'));
 
     if (newRoom != null) {
-        var sndPath = encodeURI('https://8fa556c8.ngrok.io/' + newRoom.soundPath);
+        var sndPath = encodeURI('https://jimmyalexaskills.azurewebsites.net/' + newRoom.soundPath);
         res.session("currentRoom", newRoom.name);
         res.say("<audio src='" + sndPath + "' />");
 
         if (newRoom.autoMove) {
             var newRoomNext = newRoom.nextRooms[0];
-            var sndPath2 = encodeURI('https://8fa556c8.ngrok.io/' + newRoomNext.soundPath);
+            var sndPath2 = encodeURI('https://jimmyalexaskills.azurewebsites.net/' + newRoomNext.soundPath);
             res.session("currentRoom", newRoomNext.name);
             res.say("<audio src='" + sndPath2 + "' />");
         }

@@ -144,7 +144,7 @@ function CaveMaster(currentRoom) {
 		"so you decide to go see the gangsta the gangstas like sup and gives you a high five, what should you do trust the ganster and keep on walking or should you attack him",
 		"snd/Enter Cave - Gankster.mp3",
 		"img/gankster.png",
-		["gangster", "gangsta", "left", "gang", "les", "las", "Hunter", "king", "Winter", "Kate"]
+		["gangster", "gangsta", "left", "gang", "les", "las"]
 		
         );
         rooms.push(gangsterStart);
