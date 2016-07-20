@@ -1,0 +1,13 @@
+{
+  "name": "AlexaCaveMaster",
+  "version": "0.0.0",
+  "description": "AlexaCaveMaster",
+  "main": "app.js",
+  "author": {
+    "name": "Jimmy",
+    "email": ""
+  },
+  "dependencies": {
+    "alexa-app-server": "^2.2.4"
+  }
+}

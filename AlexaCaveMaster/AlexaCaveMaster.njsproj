@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <Name>AlexaCaveMaster</Name>
+    <RootNamespace>AlexaCaveMaster</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>5525c2ff-8c7a-49ee-a356-0bc4fc9bfe02</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>server.js</StartupFile>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartWebBrowser>false</StartWebBrowser>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="apps\AbbyStory\index.js" />
+    <Compile Include="apps\cave_master\cavemaster.js" />
+    <Compile Include="apps\cave_master\index.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\example\express.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\example\lamda.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\example\template.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\example\test.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\index.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\test\helpers\mock_helper.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\test\test_alexa_app_cards.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\test\test_alexa_app_initialization.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\test\test_alexa_app_intent_request.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\test\test_alexa_app_launch_request.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\test\test_alexa_app_schema.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\test\test_alexa_app_session.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\test\test_alexa_app_utterances_schema.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\test\to-ssml.test.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-app\to-ssml.js" />
+    <Compile Include="apps\cave_master\node_modules\alexa-utterances\index.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\browser\bluebird.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\browser\bluebird.min.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\any.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\assert.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\async.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\bind.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\bluebird.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\call_get.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\cancel.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\captured_trace.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\catch_filter.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\context.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\debuggability.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\direct_resolve.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\each.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\errors.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\es5.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\filter.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\finally.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\generators.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\join.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\map.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\method.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\nodeify.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\progress.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\promise.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\promise_array.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\promise_resolver.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\promisify.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\props.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\queue.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\race.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\reduce.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\schedule.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\settle.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\some.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\synchronous_inspection.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\thenables.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\timers.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\using.js" />
+    <Compile Include="apps\cave_master\node_modules\bluebird\js\main\util.js" />
+    <Compile Include="apps\cave_master\node_modules\js-combinatorics\combinatorics.js" />
+    <Compile Include="apps\cave_master\node_modules\js-combinatorics\package.js" />
+    <Compile Include="apps\cave_master\node_modules\js-combinatorics\test\baseN.js" />
+    <Compile Include="apps\cave_master\node_modules\js-combinatorics\test\bigCombination.js" />
+    <Compile Include="apps\cave_master\node_modules\js-combinatorics\test\C.js" />
+    <Compile Include="apps\cave_master\node_modules\js-combinatorics\test\cartesianproduct.js" />
+    <Compile Include="apps\cave_master\node_modules\js-combinatorics\test\combination.js" />
+    <Compile Include="apps\cave_master\node_modules\js-combinatorics\test\P.js" />
+    <Compile Include="apps\cave_master\node_modules\js-combinatorics\test\permutation.js" />
+    <Compile Include="apps\cave_master\node_modules\js-combinatorics\test\permutationCombination.js" />
+    <Compile Include="apps\cave_master\node_modules\js-combinatorics\test\power.js" />
+    <Compile Include="apps\cave_master\node_modules\numbered\index.js" />
+    <Compile Include="apps\cave_master\node_modules\numbered\test.js" />
+    <Compile Include="apps\hello_world\index.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\example\express.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\example\lamda.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\example\template.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\example\test.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\index.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\test\helpers\mock_helper.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\test\test_alexa_app_cards.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\test\test_alexa_app_initialization.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\test\test_alexa_app_intent_request.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\test\test_alexa_app_launch_request.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\test\test_alexa_app_schema.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\test\test_alexa_app_session.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\test\test_alexa_app_utterances_schema.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\test\to-ssml.test.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-app\to-ssml.js" />
+    <Compile Include="apps\hello_world\node_modules\alexa-utterances\index.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\browser\bluebird.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\browser\bluebird.min.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\any.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\assert.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\async.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\bind.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\bluebird.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\call_get.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\cancel.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\captured_trace.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\catch_filter.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\context.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\debuggability.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\direct_resolve.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\each.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\errors.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\es5.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\filter.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\finally.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\generators.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\join.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\map.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\method.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\nodeify.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\progress.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\promise.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\promise_array.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\promise_resolver.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\promisify.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\props.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\queue.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\race.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\reduce.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\schedule.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\settle.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\some.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\synchronous_inspection.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\thenables.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\timers.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\using.js" />
+    <Compile Include="apps\hello_world\node_modules\bluebird\js\main\util.js" />
+    <Compile Include="apps\hello_world\node_modules\js-combinatorics\combinatorics.js" />
+    <Compile Include="apps\hello_world\node_modules\js-combinatorics\package.js" />
+    <Compile Include="apps\hello_world\node_modules\js-combinatorics\test\baseN.js" />
+    <Compile Include="apps\hello_world\node_modules\js-combinatorics\test\bigCombination.js" />
+    <Compile Include="apps\hello_world\node_modules\js-combinatorics\test\C.js" />
+    <Compile Include="apps\hello_world\node_modules\js-combinatorics\test\cartesianproduct.js" />
+    <Compile Include="apps\hello_world\node_modules\js-combinatorics\test\combination.js" />
+    <Compile Include="apps\hello_world\node_modules\js-combinatorics\test\P.js" />
+    <Compile Include="apps\hello_world\node_modules\js-combinatorics\test\permutation.js" />
+    <Compile Include="apps\hello_world\node_modules\js-combinatorics\test\permutationCombination.js" />
+    <Compile Include="apps\hello_world\node_modules\js-combinatorics\test\power.js" />
+    <Compile Include="apps\hello_world\node_modules\numbered\index.js" />
+    <Compile Include="apps\hello_world\node_modules\numbered\test.js" />
+    <Compile Include="apps\number_guessing_game\index.js" />
+    <Compile Include="server.js" />
+    <Compile Include="server\login.js" />
+    <Content Include="apps\AbbyStory\package.json" />
+    <Content Include="apps\cave_master\node_modules\alexa-app\.eslintignore" />
+    <Content Include="apps\cave_master\node_modules\alexa-app\.eslintrc.yaml" />
+    <Content Include="apps\cave_master\node_modules\alexa-app\.gitattributes" />
+    <Content Include="apps\cave_master\node_modules\alexa-app\.npmignore" />
+    <Content Include="apps\cave_master\node_modules\alexa-app\.travis.yml" />
+    <Content Include="apps\cave_master\node_modules\alexa-app\example\package.json" />
+    <Content Include="apps\cave_master\node_modules\alexa-app\example\views\test.ejs" />
+    <Content Include="apps\cave_master\node_modules\alexa-app\LICENSE.md" />
+    <Content Include="apps\cave_master\node_modules\alexa-app\package.json" />
+    <Content Include="apps\cave_master\node_modules\alexa-app\README.md" />
+    <Content Include="apps\cave_master\node_modules\alexa-app\test\fixtures\expected_intent_schema.json" />
+    <Content Include="apps\cave_master\node_modules\alexa-app\test\fixtures\intent_request_airport_info.json" />
+    <Content Include="apps\cave_master\node_modules\alexa-app\test\fixtures\intent_request_launch.json" />
+    <Content Include="apps\cave_master\node_modules\alexa-utterances\.npmignore" />
+    <Content Include="apps\cave_master\node_modules\alexa-utterances\changelog.md" />
+    <Content Include="apps\cave_master\node_modules\alexa-utterances\LICENSE" />
+    <Content Include="apps\cave_master\node_modules\alexa-utterances\package.json" />
+    <Content Include="apps\cave_master\node_modules\alexa-utterances\README.md" />
+    <Content Include="apps\cave_master\node_modules\bluebird\changelog.md" />
+    <Content Include="apps\cave_master\node_modules\bluebird\LICENSE" />
+    <Content Include="apps\cave_master\node_modules\bluebird\package.json" />
+    <Content Include="apps\cave_master\node_modules\bluebird\README.md" />
+    <Content Include="apps\cave_master\node_modules\js-combinatorics\.npmignore" />
+    <Content Include="apps\cave_master\node_modules\js-combinatorics\.travis.yml" />
+    <Content Include="apps\cave_master\node_modules\js-combinatorics\package.json" />
+    <Content Include="apps\cave_master\node_modules\js-combinatorics\README.md" />
+    <Content Include="apps\cave_master\node_modules\js-combinatorics\test\browser.html" />
+    <Content Include="apps\cave_master\node_modules\numbered\.npmignore" />
+    <Content Include="apps\cave_master\node_modules\numbered\.travis.yml" />
+    <Content Include="apps\cave_master\node_modules\numbered\package.json" />
+    <Content Include="apps\cave_master\node_modules\numbered\Readme.md" />
+    <Content Include="apps\cave_master\package.json" />
+    <Content Include="apps\hello_world\node_modules\alexa-app\.eslintignore" />
+    <Content Include="apps\hello_world\node_modules\alexa-app\.eslintrc.yaml" />
+    <Content Include="apps\hello_world\node_modules\alexa-app\.gitattributes" />
+    <Content Include="apps\hello_world\node_modules\alexa-app\.npmignore" />
+    <Content Include="apps\hello_world\node_modules\alexa-app\.travis.yml" />
+    <Content Include="apps\hello_world\node_modules\alexa-app\example\package.json" />
+    <Content Include="apps\hello_world\node_modules\alexa-app\example\views\test.ejs" />
+    <Content Include="apps\hello_world\node_modules\alexa-app\LICENSE.md" />
+    <Content Include="apps\hello_world\node_modules\alexa-app\package.json" />
+    <Content Include="apps\hello_world\node_modules\alexa-app\README.md" />
+    <Content Include="apps\hello_world\node_modules\alexa-app\test\fixtures\expected_intent_schema.json" />
+    <Content Include="apps\hello_world\node_modules\alexa-app\test\fixtures\intent_request_airport_info.json" />
+    <Content Include="apps\hello_world\node_modules\alexa-app\test\fixtures\intent_request_launch.json" />
+    <Content Include="apps\hello_world\node_modules\alexa-utterances\.npmignore" />
+    <Content Include="apps\hello_world\node_modules\alexa-utterances\changelog.md" />
+    <Content Include="apps\hello_world\node_modules\alexa-utterances\LICENSE" />
+    <Content Include="apps\hello_world\node_modules\alexa-utterances\package.json" />
+    <Content Include="apps\hello_world\node_modules\alexa-utterances\README.md" />
+    <Content Include="apps\hello_world\node_modules\bluebird\changelog.md" />
+    <Content Include="apps\hello_world\node_modules\bluebird\LICENSE" />
+    <Content Include="apps\hello_world\node_modules\bluebird\package.json" />
+    <Content Include="apps\hello_world\node_modules\bluebird\README.md" />
+    <Content Include="apps\hello_world\node_modules\js-combinatorics\.npmignore" />
+    <Content Include="apps\hello_world\node_modules\js-combinatorics\.travis.yml" />
+    <Content Include="apps\hello_world\node_modules\js-combinatorics\package.json" />
+    <Content Include="apps\hello_world\node_modules\js-combinatorics\README.md" />
+    <Content Include="apps\hello_world\node_modules\js-combinatorics\test\browser.html" />
+    <Content Include="apps\hello_world\node_modules\numbered\.npmignore" />
+    <Content Include="apps\hello_world\node_modules\numbered\.travis.yml" />
+    <Content Include="apps\hello_world\node_modules\numbered\package.json" />
+    <Content Include="apps\hello_world\node_modules\numbered\Readme.md" />
+    <Content Include="apps\hello_world\package.json" />
+    <Content Include="apps\number_guessing_game\package.json" />
+    <Content Include="public_html\Enter Cave - Gankster.mp3" />
+    <Content Include="sslcert\cert.cer" />
+    <Content Include="package.json" />
+    <Content Include="sslcert\private-key.pem" />
+    <Content Include="public_html\index.html" />
+    <Content Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="apps\" />
+    <Folder Include="apps\AbbyStory\" />
+    <Folder Include="apps\cave_master\" />
+    <Folder Include="apps\cave_master\node_modules\" />
+    <Folder Include="apps\cave_master\node_modules\alexa-app\" />
+    <Folder Include="apps\cave_master\node_modules\alexa-app\example\" />
+    <Folder Include="apps\cave_master\node_modules\alexa-app\example\views\" />
+    <Folder Include="apps\cave_master\node_modules\alexa-app\test\" />
+    <Folder Include="apps\cave_master\node_modules\alexa-app\test\fixtures\" />
+    <Folder Include="apps\cave_master\node_modules\alexa-app\test\helpers\" />
+    <Folder Include="apps\cave_master\node_modules\alexa-utterances\" />
+    <Folder Include="apps\cave_master\node_modules\bluebird\" />
+    <Folder Include="apps\cave_master\node_modules\bluebird\js\" />
+    <Folder Include="apps\cave_master\node_modules\bluebird\js\browser\" />
+    <Folder Include="apps\cave_master\node_modules\bluebird\js\main\" />
+    <Folder Include="apps\cave_master\node_modules\js-combinatorics\" />
+    <Folder Include="apps\cave_master\node_modules\js-combinatorics\test\" />
+    <Folder Include="apps\cave_master\node_modules\numbered\" />
+    <Folder Include="apps\hello_world\" />
+    <Folder Include="apps\hello_world\node_modules\" />
+    <Folder Include="apps\hello_world\node_modules\alexa-app\" />
+    <Folder Include="apps\hello_world\node_modules\alexa-app\example\" />
+    <Folder Include="apps\hello_world\node_modules\alexa-app\example\views\" />
+    <Folder Include="apps\hello_world\node_modules\alexa-app\test\" />
+    <Folder Include="apps\hello_world\node_modules\alexa-app\test\fixtures\" />
+    <Folder Include="apps\hello_world\node_modules\alexa-app\test\helpers\" />
+    <Folder Include="apps\hello_world\node_modules\alexa-utterances\" />
+    <Folder Include="apps\hello_world\node_modules\bluebird\" />
+    <Folder Include="apps\hello_world\node_modules\bluebird\js\" />
+    <Folder Include="apps\hello_world\node_modules\bluebird\js\browser\" />
+    <Folder Include="apps\hello_world\node_modules\bluebird\js\main\" />
+    <Folder Include="apps\hello_world\node_modules\js-combinatorics\" />
+    <Folder Include="apps\hello_world\node_modules\js-combinatorics\test\" />
+    <Folder Include="apps\hello_world\node_modules\numbered\" />
+    <Folder Include="apps\number_guessing_game\" />
+    <Folder Include="sslcert\" />
+    <Folder Include="public_html\" />
+    <Folder Include="server\" />
+  </ItemGroup>
+  <!-- Do not delete the following Import Project.  While this appears to do nothing it is a marker for setting TypeScript properties before our import that depends on them. -->
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="False" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+</Project>
